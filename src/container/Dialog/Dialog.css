@@ -1,0 +1,40 @@
+.confirm-button {
+  border-radius: 2px;
+  background: var(--orange);
+  height: 40px;
+  width: 100%;
+  border: none;
+  filter: drop-shadow(0px 3px 14px rgba(0, 0, 29, 0.12));
+}
+
+.confirm-button:focus {
+  outline: none;
+}
+
+.confirm-button:hover {
+  cursor: pointer;
+}
+
+.dialog-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  width: 360px;
+  height: 630px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog {
+  background: white;
+  height: 254px;
+  width: 328px;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0px 8px 30px rgba(0, 0, 29, 0.17));
+  margin: 2% 5%;
+  padding: 2% 5%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}

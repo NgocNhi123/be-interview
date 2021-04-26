@@ -1,0 +1,10 @@
+.transfer-info {
+  display: flex;
+  height: 48px;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-right: 5%;
+  justify-content: center;
+  background: white;
+  flex-direction: column;
+}

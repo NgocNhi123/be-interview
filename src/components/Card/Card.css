@@ -1,0 +1,20 @@
+.card {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  background: white;
+  padding-left: 5%;
+  margin-bottom: 1%;
+}
+
+.card > img {
+  padding-right: 4%;
+}
+
+.check {
+  margin-left: auto;
+}
+
+.card:hover {
+  cursor: pointer;
+}

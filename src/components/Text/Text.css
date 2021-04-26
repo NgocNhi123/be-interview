@@ -1,0 +1,10 @@
+@import url("../../assets/colors/Colors.css");
+@import url("../../assets/fonts/Fonts.css");
+
+.defaultStyle {
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--black1);
+  font-family: inter;
+}

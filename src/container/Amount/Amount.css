@@ -1,0 +1,60 @@
+@import url("../../assets/colors/Colors.css");
+
+.heading {
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  height: 48px;
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto 5%;
+  width: 90%;
+}
+
+.moneyButton {
+  flex: 0 1 30%;
+  height: 48px;
+  margin-bottom: 2%;
+  background: #ffffff;
+  box-shadow: 0px 3px 14px rgba(0, 0, 29, 0.12);
+  border-radius: 2px;
+  border: none;
+}
+
+.moneyButton:focus {
+  outline: none;
+  border: 2px solid #1366e9;
+}
+
+.moneyButton:hover {
+  cursor: pointer;
+}
+
+.proceedToCheckout {
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.proceedToCheckout > button {
+  border-radius: 2px;
+  background: var(--orange);
+  height: 40px;
+  width: 90%;
+  border: none;
+  filter: drop-shadow(0px 3px 14px rgba(0, 0, 29, 0.12));
+}
+
+.proceedToCheckout > button:focus {
+  outline: none;
+}
+
+.proceedToCheckout > button:hover {
+  cursor: pointer;
+}
