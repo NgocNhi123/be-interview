@@ -34,7 +34,7 @@ const Amount = ({ onClick }) => {
         })}
       </div>
       <div className="proceedToCheckout">
-        <button onClick={() => onClick({ amount: moneyDonate })}>
+        <button onClick={() => onClick(moneyDonate)}>
           <Text fontWeight="bold">Tiến hành thanh toán</Text>
         </button>
       </div>
