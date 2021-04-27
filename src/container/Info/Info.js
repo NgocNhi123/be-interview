@@ -4,6 +4,7 @@ import TransferInfo from "../../components/TransferInfo/TransferInfo";
 import Text from "../../components/Text/Text";
 import * as Fetch from "../../utils/Fetch";
 import { URL } from "../../common/index";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const Info = () => {
   const [bankInfo, setBankInfo] = useState({});
@@ -25,9 +26,11 @@ const Info = () => {
       <div className="card-with-button">
         <TransferInfo title="số tài khoản">{bankInfo.number}</TransferInfo>
         <div className="copy-button">
-          <button>
-            <Text fontWeight="bold">Copy STK</Text>
-          </button>
+          <CopyToClipboard text={bankInfo.number}>
+            <button>
+              <Text fontWeight="bold">Copy STK</Text>
+            </button>
+          </CopyToClipboard>
         </div>
       </div>
       <TransferInfo title="tên tài khoản">{bankInfo.account}</TransferInfo>

@@ -58,3 +58,7 @@
 .proceedToCheckout > button:hover {
   cursor: pointer;
 }
+
+.isClicked {
+  border: 2px solid #1366e9;
+}

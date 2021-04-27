@@ -4,9 +4,9 @@ import Text from "../../components/Text/Text";
 import { VNDFormatter } from "../../utils/MoneyFormatter";
 
 const Amount = ({ onClick }) => {
-  const amounts = [100000, 200000, 300000, 500000, 800000, 100000];
+  const amounts = [100000, 200000, 300000, 500000, 800000, 1000000];
   const formatter = VNDFormatter();
-  const [moneyDonate, setMoneyDonate] = useState(0);
+  const [moneyDonate, setMoneyDonate] = useState(100000);
 
   return (
     <div className="amount">
@@ -25,7 +25,9 @@ const Amount = ({ onClick }) => {
           return (
             <button
               key={index}
-              className="moneyButton"
+              className={
+                moneyDonate === item ? "moneyButton isClicked" : "moneyButton"
+              }
               onClick={() => setMoneyDonate(item)}
             >
               <Text fontWeight="bold">{formatter.format(item)}</Text>
