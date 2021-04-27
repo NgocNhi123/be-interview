@@ -14,8 +14,13 @@ function App() {
   };
 
   async function getData(amount) {
+<<<<<<< HEAD
     if (amount === 0) return;
     let data = await Fetch.post(`${URL}/card`, { amount });
+=======
+    if(amount === 0) return;
+    let data = await Fetch.post(`${URL}/card`, amount);
+>>>>>>> 5ee068d2cfda4b6993a5972a7a152215e31ccf15
     if (data && data.data && data.data.success) setShowDialog(true);
   }
 
