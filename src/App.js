@@ -14,6 +14,7 @@ function App() {
   };
 
   async function getData(amount) {
+    if(amount === 0) return;
     let data = await Fetch.post(`${URL}/card`, amount);
     if (data && data.data && data.data.success) setShowDialog(true);
   }
